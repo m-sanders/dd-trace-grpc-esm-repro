@@ -1,0 +1,13 @@
+{
+  "name": "dd-trace-grpc-esm-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro:import": "DD_TRACE_EXPERIMENTAL_EXPORTER=log node --import dd-trace/register.js repro.mjs import",
+    "repro:require": "DD_TRACE_EXPERIMENTAL_EXPORTER=log node --import dd-trace/register.js repro.mjs require"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "1.14.5",
+    "dd-trace": "6.20.1"
+  }
+}
